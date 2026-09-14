@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --rubik:  "Rubik", sans-serif;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul,ol{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:1210px;
+    margin: 0 auto;
+}
+.header_container, .nav_list, .header_block{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header_container{
+      padding: 30px 0;
+}
+
+.nav_list{
+    width:403px;
+}
+
+.nav_link{
+    text-transform:capitalize;
+    color:grey;
+    font-weight:600;
+    font-family:var(--rubik);
+
+}
+
+.header_block{
+    width:210px;
+}
+.header_login{
+    text-transform:capitalize;
+    color:black;
+    font-family:var(--rubik);
+    font-weight:600;
+
+}
+
+.header_register{
+    width:147px;
+    font-family:var(--rubik);
+    background-color:#8BAC3E;
+    color:white;
+    text-transform:capitalize;
+    padding:12px 15px;
+    border-radius:30px;
+}  
