@@ -1,48 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elemes.id</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header class="header" id="header">
-        <div class="container">
-            <div class="header_container">
-          <a class="header_logo" href="/">
-            <img src="./pictures/logo.png" alt="header logo">
-          </a>
-          <nav class="nav" id="nav">
-    <ul class="nav_list">
-        <li class="nav_item">
-            <a href="#" class="nav_link">home</a>
-        </li>
-
-        <li class="nav_item">
-            <a href="#" class="nav_link">about</a>
-        </li>
-
-        <li class="nav_item">
-            <a href="#" class="nav_link">promotions</a>
-        </li>
-
-        <li class="nav_item">
-            <a href="#" class="nav_link">blogs</a>
-        </li>
-
-        <li class="nav_item">
-            <a href="#" class="nav_link">contact us</a>
-        </li>
-    </ul>
-</nav>  
-          <div class="header_block">
-            <a class="header_login" href="#">masuk</a>
-            <a class="header_register" href="#">daftar sekarang</a>
-          </div>
-            </div>
+      <div class="container header_container">
+        <a class="header_logo" href="#">
+          <img src="./pictures/logo.png" alt="header logo" />
+        </a>
+        <nav class="nav" id="nav">
+          <ul class="nav_list">
+            <li class="nav_item">
+              <a href="#" class="nav_link">home</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">about</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link nav_link_badge">
+                promotions
+                <span>hot</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">blogs</a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_button">
+          <a class="header_login" href="#">Masuk</a>
+          <a class="header_register" href="#">Daftar Sekarang</a>
         </div>
+      </div>
     </header>
-    
-</body>
+    <main class="main" id="main">
+      <section class="hero" id="hero">
+        <div class="container hero_container">
+          <div class="hero_text">
+            <h1>good food us good mood</h1>
+            <p>
+              I would think that conserving our natural resources should be a
+              conservative position: Not to waste food, and not to throw away a
+              lot of the food that we buy.
+            </p>
+            <div class="header_button">
+              <a class="header_register" href="#">Daftar Sekarang</a>
+              <a class="header_login hero_login" href="#">about us</a>
+            </div>
+          </div>
+          <img src="./pictures/elemes-hero-img.png" alt="hero img" />
+        </div>
+      </section>
+      <section class="category" id="category">
+        <div class="container">
+          <h1 class="category_title">
+            browser our category
+            <span>receipt</span>
+          </h1>
+          <ul class="category_list">
+            <li class="category_item">
+              <img src="./pictures/cupcake.png" alt="cupcake img">
+              <h2>cupcake</h2>
+              <span>22 items</span>
+            </li>
+            <li class="category_item">
+              <img src="./pictures/pizza.png" alt="pizza img">
+              <h2>pizza</h2>
+              <span>25 items</span>
+            </li>
+            <li class="category_item">
+              <img src="./pictures/kebab.png" alt="kebab img">
+              <h2>kebab</h2>
+              <span>12 items</span>
+            </li>
+            <li class="category_item">
+              <img src="./pictures/salmon.png" alt="salmon img">
+              <h2>salmon</h2>
+              <span>22 items</span>
+            </li>
+            <li class="category_item">
+              <img src="./pictures/doughnut.png" alt="doughnut">
+              <h2>doughnut</h2>
+              <span>11 items</span>
+            </li>
+          </ul>
+          <div class="category_btn">
+            <button>
+              <img src="./pictures/prev.png" alt="prev icon">
+              prev
+            </button>
+            <button>
+              next
+              <img src="./pictures/next.png" alt="next icon">
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

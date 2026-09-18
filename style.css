@@ -1,8 +1,9 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 :root{
     --rubik:  "Rubik", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
 }
 *{
     margin:0;
@@ -17,50 +18,229 @@ ul,ol{
 a{
     text-decoration:none;
 }
+body{
+    padding-bottom: 100px;
+}
 
 .container{
     width:1210px;
     margin: 0 auto;
 }
-.header_container, .nav_list, .header_block{
+.header_container,
+.nav_list,
+.header_block{
     display:flex;
     align-items:center;
     justify-content:space-between;
+    margin:0px 0%;
 }
 
 .header_container{
-      padding: 30px 0;
+    justify-content:space-between;
+    padding: 20px 0;
 }
 
 .nav_list{
     width:403px;
 }
 
-.nav_link{
+.nav_link,
+.header_login,
+.header_register{
+    display:flex;
     text-transform:capitalize;
+    font-family:var(--rubik);
+
+}
+
+.nav_link{
     color:grey;
     font-weight:600;
-    font-family:var(--rubik);
+}
+
+.nav_link_badge{
+    position:relative;
+}
+
+.nav_link_badge span{
+    background-color:crimson;
+    color:aliceblue;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:12px;
+    font-family:var(--open-sans);
+    padding: 5px 9px;
+    border-radius:16px;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    transform: translate(45%,-100%);
+}
+
+.header_button {
+    gap: 24px;
+    justify-content:flex-end;
 
 }
+
 
 .header_block{
-    width:210px;
+    display:flex;
+    align-items:center;
+    gap: 20px;
 }
+
+
 .header_login{
-    text-transform:capitalize;
     color:black;
-    font-family:var(--rubik);
     font-weight:600;
+    background-color:#F5F5F5;
+    padding:12px 15px;
+    border-radius:30px;
+    font-family:var(--rubik);
 
 }
 
 .header_register{
     width:147px;
-    font-family:var(--rubik);
     background-color:#8BAC3E;
     color:white;
-    text-transform:capitalize;
     padding:12px 15px;
     border-radius:30px;
 }  
+
+.hero_container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.hero_text{
+    flex:1;
+   max-width: 560px;
+}
+
+.hero_text h1{
+    font-family:var(--rubik);
+    font-size: 64px;
+    font-weight: 600;
+    text-transform:capitalize;
+    color:#8bac3e;
+}
+
+.hero_text p{
+    font-family:var(--rubik);
+    color:gray;
+    margin:10px 0 20px;
+}
+
+.hero_block{
+    width:auto;
+    justify-content:flex-start;
+    gap:20px;
+}
+
+.hero_image{
+    max-width:520px;
+    width:100%;
+    border-radius:30px;
+    object-fit:cover;
+}
+.category_title{
+    width:550px;
+    font-family:var(--rubik);
+    font-weight:500;
+    text-transform:capitalize;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.category_title span{
+    color:#8bac3e;
+
+}
+.category_list{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:50px;
+}
+
+.category_item{
+    width: 230px;
+    padding: 30px 80px;
+    text-transform:capitalize;
+    text-align:center;
+    font-family: var(--rubik);
+    border-radius:10px;
+    cursor:pointer;
+
+}
+
+.category_item:hover{
+    transform-origin:top;
+    transform:scale(1.1);
+    background-image:url(./pictures/card_bg.png);
+}
+
+.category_item:first-child{
+    background-color:#f0feeb;
+}
+
+.category_item:nth-child(2){
+    background-color:#e4f2f4;
+}
+
+.category_item:nth-child(3){
+    background-color:#eaeefa;
+}
+
+.category_item:nth-child(4){
+    background-color:#f9eef3;
+}
+
+.category_item:last-child{
+    background-color:#f3f7d9;
+}
+
+
+.category_item img{
+    width:47px;
+    height:47px;
+    margin-bottom:20px;
+} 
+
+.category_item h2{
+    font-weight:500;
+    font-size:18px;
+    margin-bottom:5px;
+
+}
+
+.category_btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    justify-content:flex-end;
+}
+
+.category_btn button{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    border-radius:30px;
+    padding:8px;
+    border:none;
+    background-color:#8bac3e;
+    color:white;
+    text-transform:uppercase;
+    font-family:var(--rubik);
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.category_btn button:active{
+    background-color:#acd64a;
+}
